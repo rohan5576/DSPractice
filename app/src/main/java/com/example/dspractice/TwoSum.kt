@@ -9,7 +9,7 @@ import android.util.Log
 
         nums?.forEachIndexed { index, i ->
             mHashMap[i]?.let { return intArrayOf(it,index) }
-            mHashMap[target -i] = index
+            mHashMap[i] = index
         }
         return intArrayOf()
     }
